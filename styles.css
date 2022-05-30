@@ -63,6 +63,12 @@ h2
     text-align: center;
     padding: 1rem;
 }
+img
+{
+    margin: auto;
+    max-width: 250px;
+    max-height: 150px;
+}
 
 #formula
 {
