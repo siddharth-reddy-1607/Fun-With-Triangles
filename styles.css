@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
 :root
 {
-    --nav-color:#1f2937;
-    --background-color: #E1F2F7;
-    --text-color:black;
+    --background-color: #22252a;
+    --primary-color:#2563eb;
+    --text-color: #f3f3f3;
+
 }
 
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    background-color: #6EE7b7;
-}
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}   
 
 html
 {
@@ -21,7 +23,7 @@ html
 
 nav
 {
-    background-color:var(--nav-color);
+    background-color:var(--primary-color);
     padding: 1rem;
     text-align: center;
     border-bottom-right-radius: 1rem;
@@ -41,12 +43,12 @@ nav a
 
 a:hover
 {
-    background-color: beige;
+    text-decoration: underline;
 }
 
 #active
 {
-    background-color: beige;
+    text-decoration: underline;
 }
 
 .nav-container
@@ -62,6 +64,15 @@ h2
     padding: 1rem;
 }
 
+#formula
+{
+    padding-bottom:1rem;
+    font-size:18px;
+    max-width: 350px;
+    margin: auto;
+    border: 3px solid var(--primary-color) ;
+}
+
 .container
 {
     display: flex;
@@ -75,9 +86,10 @@ h2
     flex-direction: column;
     padding: 0.5rem 0 0 2rem;
 }
-.options-container label
+.container label
 {
-    padding-bottom:0.5rem ;
+    padding:0.1rem ;
+    margin-top: 0.75rem;
 }
 
 .input
@@ -87,9 +99,15 @@ h2
 
 button
 {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     margin-bottom: 1rem;
+    border: none;
+    width: 150px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
     text-align: center;
+    background-color: var(--primary-color);
+    color: var(--text-color);
 }
 
 #output

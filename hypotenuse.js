@@ -6,9 +6,16 @@ calculateButton.addEventListener("click",calculateHypotenuse);
 
 function calculateHypotenuse()
 {
+    if(sides[0].value && sides[1].value)
+    {
     const a=Number(sides[0].value);
     const b=Number(sides[1].value);
     var sumOfSquares=a*a+b*b;
-    var hypotenuse=Math.sqrt(sumOfSquares);
-    output.innerText="The lenght of the hypotenuse is "+hypotenuse+"cm";
+    var hypotenuse=Math.sqrt(sumOfSquares).toFixed(2);
+    output.innerText="The length of the hypotenuse is "+hypotenuse+"cm";
+    }
+    else
+    {
+        output.innerText="Please Enter both the fields"
+    }
 }
